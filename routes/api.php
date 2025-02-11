@@ -38,6 +38,8 @@ Route::get("/get_detail_movie/{id}",[MovieController::class,"getDetailMovie"]);
 Route::put("/update_movie/{id}",[MovieController::class,"update_movie"]);
 Route::delete("/hapus_movie/{id}",[MovieController::class,"hapus_movie"]);
 
+Route::post("/login",[AuthController::class,"login"]);
+Route::get("/logout",[AuthController::class,"logout"]);
 
 
 
